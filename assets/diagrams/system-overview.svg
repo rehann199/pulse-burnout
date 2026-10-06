@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">System overview</title>
+  <desc id="d">A Flutter app on the device contains the screens, Riverpod state, a scoring layer, rule-based insight logic and a local Hive store. Optional cloud services provide sign-in, a Firestore copy for signed-in users, push messaging, analytics and crash reporting. Ads for free users come from a mediation SDK and the premium subscription goes through the native stores.</desc>
+  <defs>
+    <style>
+      text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e8f1ec; }
+      .h { font-size: 24px; font-weight: 700; }
+      .k { font-size: 12px; fill: #8fb9a3; letter-spacing: 1.5px; font-weight: 700; }
+      .b { font-size: 15px; }
+      .s { font-size: 13px; fill: #a9c7b8; }
+      .zone { fill: #10241d; stroke: #2f5a4a; stroke-width: 2; }
+      .zonec { fill: #14202b; stroke: #36587c; stroke-width: 2; }
+      .zones { fill: #26221a; stroke: #7a6535; stroke-width: 2; }
+      .box { fill: #17302f; stroke: #5aa7a0; stroke-width: 2; }
+      .boxc { fill: #1b2c40; stroke: #5b8ac4; stroke-width: 2; }
+      .boxs { fill: #332c1c; stroke: #c9a24f; stroke-width: 2; }
+      .arrow { stroke: #7fc2a4; stroke-width: 2; fill: none; marker-end: url(#a); }
+      .arrowd { stroke: #7fc2a4; stroke-width: 2; fill: none; stroke-dasharray: 6 4; marker-end: url(#a); }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7fc2a4"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" rx="16" fill="#0d1a16"/>
+  <text x="40" y="50" class="h">Local-first app with optional cloud services</text>
+
+  <rect x="40" y="80" width="640" height="400" rx="14" class="zone"/>
+  <text x="62" y="110" class="k">ON DEVICE · FLUTTER APP (ANDROID + IOS)</text>
+
+  <rect x="62" y="130" width="280" height="64" rx="10" class="box"/>
+  <text x="78" y="158" class="b">Screens + navigation</text><text x="78" y="180" class="s">Four tabs, onboarding gate</text>
+  <rect x="62" y="214" width="280" height="64" rx="10" class="box"/>
+  <text x="78" y="242" class="b">Riverpod state</text><text x="78" y="264" class="s">Providers orchestrate services</text>
+  <rect x="62" y="298" width="280" height="64" rx="10" class="box"/>
+  <text x="78" y="326" class="b">Scoring layer</text><text x="78" y="348" class="s">Pure Dart: weighting + smoothing</text>
+  <rect x="62" y="382" width="280" height="64" rx="10" class="box"/>
+  <text x="78" y="410" class="b">Rule-based insights</text><text x="78" y="432" class="s">Weekly summary, patterns, actions</text>
+
+  <rect x="390" y="130" width="270" height="100" rx="10" class="box"/>
+  <text x="406" y="158" class="b">Local store (Hive)</text><text x="406" y="182" class="s">Check-ins, baseline, journal,</text><text x="406" y="202" class="s">actions, insights, settings</text>
+  <rect x="390" y="262" width="270" height="64" rx="10" class="box"/>
+  <text x="406" y="290" class="b">Reminders</text><text x="406" y="312" class="s">Scheduled local notifications</text>
+  <rect x="390" y="358" width="270" height="88" rx="10" class="box"/>
+  <text x="406" y="386" class="b">Analytics layer</text><text x="406" y="408" class="s">Validating, queuing; held back</text><text x="406" y="428" class="s">until the iOS prompt resolves</text>
+
+  <rect x="740" y="80" width="420" height="230" rx="14" class="zonec"/>
+  <text x="762" y="110" class="k">OPTIONAL · FIREBASE</text>
+  <rect x="762" y="128" width="180" height="64" rx="10" class="boxc"/>
+  <text x="778" y="156" class="b">Firestore</text><text x="778" y="178" class="s">Per-user cloud copy</text>
+  <rect x="962" y="128" width="180" height="64" rx="10" class="boxc"/>
+  <text x="978" y="156" class="b">Auth</text><text x="978" y="178" class="s">Google, Apple</text>
+  <rect x="762" y="212" width="180" height="76" rx="10" class="boxc"/>
+  <text x="778" y="240" class="b">Analytics, crashes,</text><text x="778" y="262" class="b">performance</text>
+  <rect x="962" y="212" width="180" height="76" rx="10" class="boxc"/>
+  <text x="978" y="240" class="b">Messaging</text><text x="978" y="262" class="s">Server push</text>
+
+  <rect x="740" y="340" width="420" height="140" rx="14" class="zones"/>
+  <text x="762" y="370" class="k">MONETISATION</text>
+  <rect x="762" y="388" width="180" height="70" rx="10" class="boxs"/>
+  <text x="778" y="416" class="b">Ad mediation SDK</text><text x="778" y="438" class="s">Free tier, switchable</text>
+  <rect x="962" y="388" width="180" height="70" rx="10" class="boxs"/>
+  <text x="978" y="416" class="b">Native billing</text><text x="978" y="438" class="s">Play + App Store</text>
+
+  <path d="M202 194 V214" class="arrow"/>
+  <path d="M202 278 V298" class="arrow"/>
+  <path d="M202 362 V382" class="arrow"/>
+  <path d="M342 330 C365 330 365 200 390 190" class="arrow"/>
+  <path d="M342 414 C365 414 365 215 390 210" class="arrow"/>
+  <path d="M342 246 C365 246 365 285 390 285" class="arrow"/>
+  <path d="M660 180 C700 180 710 160 762 160" class="arrowd"/>
+  <path d="M660 402 C705 402 705 250 762 250" class="arrowd"/>
+  <path d="M202 130 V121 H700 V423 H762" class="arrowd" stroke-linejoin="round"/>
+</svg>

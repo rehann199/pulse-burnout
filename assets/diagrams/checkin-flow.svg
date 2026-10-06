@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Check-in and scoring flow</title>
+  <desc id="d">A one-time baseline and a short daily check-in feed a scoring step that normalises answers, combines three dimensions with weights and smooths the result over time. The smoothed score maps to one of four bands and a dominant driver. Results are stored on the device, optionally synced to a cloud account, and feed history charts, reminders and a static library of micro-actions.</desc>
+  <defs>
+    <style>
+      text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e8f1ec; }
+      .h { font-size: 24px; font-weight: 700; }
+      .k { font-size: 12px; fill: #8fb9a3; letter-spacing: 1.5px; font-weight: 700; }
+      .b { font-size: 15px; }
+      .s { font-size: 13px; fill: #a9c7b8; }
+      .n { font-size: 13px; fill: #c9b88a; }
+      .in   { fill: #12332a; stroke: #4c9a78; stroke-width: 2; }
+      .core { fill: #17302f; stroke: #5aa7a0; stroke-width: 2; }
+      .out  { fill: #2a2a1c; stroke: #c9a24f; stroke-width: 2; }
+      .opt  { fill: #1b2230; stroke: #6f86b8; stroke-width: 2; stroke-dasharray: 6 4; }
+      .arrow { stroke: #7fc2a4; stroke-width: 2; fill: none; marker-end: url(#a); }
+      .dash { stroke: #6f86b8; stroke-width: 2; fill: none; stroke-dasharray: 6 4; marker-end: url(#a2); }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7fc2a4"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6f86b8"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="16" fill="#0d1a16"/>
+  <text x="40" y="52" class="h">From a daily answer to a smoothed, explainable score</text>
+
+  <rect x="40" y="90" width="230" height="130" rx="12" class="in"/>
+  <text x="58" y="118" class="k">1 · BASELINE (ONCE)</text>
+  <text x="58" y="148" class="b">12 questions</text>
+  <text x="58" y="172" class="s">3 dimensions · 4 items each</text>
+  <text x="58" y="194" class="s">0–6 scale · retakeable</text>
+
+  <rect x="40" y="260" width="230" height="130" rx="12" class="in"/>
+  <text x="58" y="288" class="k">2 · DAILY CHECK-IN</text>
+  <text x="58" y="318" class="b">3 questions, 0–6 scale</text>
+  <text x="58" y="342" class="s">One per dimension</text>
+  <text x="58" y="364" class="s">Under a minute</text>
+
+  <rect x="40" y="430" width="230" height="84" rx="12" class="opt"/>
+  <text x="58" y="458" class="k">OPTIONAL</text>
+  <text x="58" y="484" class="b">Journal note</text>
+  <text x="58" y="504" class="s">Stored with the day</text>
+
+  <rect x="350" y="150" width="270" height="260" rx="12" class="core"/>
+  <text x="370" y="180" class="k">3 · SCORING (CUSTOM)</text>
+  <text x="370" y="212" class="b">Normalise answers to 0–100</text>
+  <text x="370" y="240" class="b">Invert efficacy to inefficacy</text>
+  <text x="370" y="268" class="b">Weighted combination of</text>
+  <text x="370" y="290" class="b">exhaustion, disengagement,</text>
+  <text x="370" y="312" class="b">inefficacy</text>
+  <text x="370" y="340" class="b">Exponential moving average,</text>
+  <text x="370" y="362" class="b">seeded from the baseline</text>
+  <text x="370" y="392" class="n">Not a validated instrument</text>
+
+  <rect x="700" y="90" width="230" height="150" rx="12" class="core"/>
+  <text x="718" y="118" class="k">4 · BAND + DRIVER</text>
+  <text x="718" y="148" class="b">Four bands from the</text>
+  <text x="718" y="170" class="b">smoothed score</text>
+  <text x="718" y="198" class="b">Dominant driver among</text>
+  <text x="718" y="220" class="b">the three dimensions</text>
+
+  <rect x="700" y="290" width="230" height="150" rx="12" class="core"/>
+  <text x="718" y="318" class="k">5 · STORE + SYNC</text>
+  <text x="718" y="348" class="b">Local store first</text>
+  <text x="718" y="372" class="s">Reads always local</text>
+  <text x="718" y="398" class="b">Signed-in: cloud copy</text>
+  <text x="718" y="420" class="s">Listeners refresh local</text>
+
+  <rect x="1000" y="90" width="170" height="64" rx="10" class="out"/>
+  <text x="1016" y="118" class="b">Result screen</text><text x="1016" y="140" class="s">Score + drivers</text>
+  <rect x="1000" y="180" width="170" height="64" rx="10" class="out"/>
+  <text x="1016" y="208" class="b">Micro-actions</text><text x="1016" y="230" class="s">Static library</text>
+  <rect x="1000" y="290" width="170" height="64" rx="10" class="out"/>
+  <text x="1016" y="318" class="b">History + charts</text><text x="1016" y="340" class="s">7-day view, patterns</text>
+  <rect x="1000" y="380" width="170" height="64" rx="10" class="out"/>
+  <text x="1016" y="408" class="b">Reminders</text><text x="1016" y="430" class="s">Local notifications</text>
+
+  <path d="M155 220 V260" class="arrow"/>
+  <path d="M270 325 C310 325 310 290 350 290" class="arrow"/>
+  <path d="M270 155 C310 155 310 220 350 220" class="arrow"/>
+  <path d="M155 390 V430" class="dash"/>
+  <path d="M270 472 C560 472 780 480 815 440" class="dash"/>
+  <path d="M620 250 C660 250 660 165 700 165" class="arrow"/>
+  <path d="M620 330 C660 330 660 365 700 365" class="arrow"/>
+  <path d="M930 130 C965 130 965 122 1000 122" class="arrow"/>
+  <path d="M930 200 C965 200 965 212 1000 212" class="arrow"/>
+  <path d="M930 340 C965 340 965 322 1000 322" class="arrow"/>
+  <path d="M930 400 C965 400 965 412 1000 412" class="arrow"/>
+
+  <text x="40" y="545" class="s">Self-reflection tool. It does not diagnose or treat, and it is not medical advice.</text>
+</svg>
